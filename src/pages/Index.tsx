@@ -1,13 +1,39 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useState } from 'react';
+import { ThemeProvider } from '@/contexts/ThemeContext';
+import CinematicIntro from '@/components/CinematicIntro';
+import Navigation from '@/components/Navigation';
+import Hero from '@/components/Hero';
+import SignatureCollections from '@/components/SignatureCollections';
+import AboutSection from '@/components/AboutSection';
+import WhyChooseUs from '@/components/WhyChooseUs';
+import Lookbook from '@/components/Lookbook';
+import Testimonials from '@/components/Testimonials';
+import VisitStore from '@/components/VisitStore';
+import Newsletter from '@/components/Newsletter';
+import Footer from '@/components/Footer';
+import ThemeSwitcher from '@/components/ThemeSwitcher';
 
 const Index = () => {
+  const [showIntro, setShowIntro] = useState(true);
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
+    <ThemeProvider>
+      <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
+        {showIntro && <CinematicIntro onComplete={() => setShowIntro(false)} />}
+        
+        <Navigation />
+        <Hero />
+        <SignatureCollections />
+        <AboutSection />
+        <WhyChooseUs />
+        <Lookbook />
+        <Testimonials />
+        <VisitStore />
+        <Newsletter />
+        <Footer />
+        <ThemeSwitcher />
       </div>
-    </div>
+    </ThemeProvider>
   );
 };
 
