@@ -1,32 +1,26 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-import collectionWomen from '@/assets/collection-women.jpg';
-import collectionMen from '@/assets/collection-men.jpg';
-import collectionFestive from '@/assets/collection-festive.jpg';
-import collectionDesigner from '@/assets/collection-designer.jpg';
+import product1 from '@/assets/product-1.jpg';
+import product2 from '@/assets/product-2.jpg';
+import product3 from '@/assets/product-3.jpg';
+import product4 from '@/assets/product-4.jpg';
+import product5 from '@/assets/product-5.jpg';
+import product6 from '@/assets/product-6.jpg';
+import product7 from '@/assets/product-7.jpg';
+import product8 from '@/assets/product-8.jpg';
+import product9 from '@/assets/product-9.jpg';
 
-const collections = [
-  {
-    title: "Women's Wear",
-    description: 'Elegant silhouettes for the modern woman',
-    image: collectionWomen,
-  },
-  {
-    title: "Men's Wear",
-    description: 'Refined tailoring meets contemporary style',
-    image: collectionMen,
-  },
-  {
-    title: 'Festive Collection',
-    description: 'Celebrate in timeless grandeur',
-    image: collectionFestive,
-  },
-  {
-    title: 'Designer Picks',
-    description: 'Curated pieces for the discerning eye',
-    image: collectionDesigner,
-  },
+const products = [
+  { image: product1, title: 'Premium Polo Collection' },
+  { image: product2, title: 'Designer Denim' },
+  { image: product3, title: 'Casual Denims' },
+  { image: product4, title: 'Classic Blue Jeans' },
+  { image: product5, title: 'Premium Shirts' },
+  { image: product6, title: 'Formal Shirts' },
+  { image: product7, title: 'Premium Loewe Jeans' },
+  { image: product8, title: 'Edwin Denim Collection' },
+  { image: product9, title: 'LV Signature Shirts' },
 ];
 
 const SignatureCollections = () => {
@@ -67,25 +61,25 @@ const SignatureCollections = () => {
           />
         </motion.div>
 
-        {/* Collections Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-          {collections.map((collection, index) => (
+        {/* Products Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+          {products.map((product, index) => (
             <motion.div
-              key={collection.title}
-              className="group relative aspect-[4/5] md:aspect-[3/4] overflow-hidden cursor-pointer"
+              key={index}
+              className="group relative aspect-[4/5] overflow-hidden cursor-pointer"
               initial={{ opacity: 0, y: 60 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ delay: 0.2 + index * 0.15, duration: 0.8 }}
+              transition={{ delay: 0.2 + index * 0.1, duration: 0.8 }}
             >
               {/* Image */}
               <motion.div
                 className="absolute inset-0"
-                whileHover={{ scale: 1.08 }}
+                whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.6, ease: 'easeOut' }}
               >
                 <img
-                  src={collection.image}
-                  alt={collection.title}
+                  src={product.image}
+                  alt={product.title}
                   className="w-full h-full object-cover"
                 />
               </motion.div>
@@ -94,34 +88,19 @@ const SignatureCollections = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-500" />
 
               {/* Content */}
-              <div className="absolute inset-0 flex flex-col justify-end p-6 md:p-10">
-                <motion.div
-                  initial={{ y: 20, opacity: 0 }}
-                  whileInView={{ y: 0, opacity: 1 }}
-                  transition={{ delay: 0.3 }}
-                >
-                  <h3 className="text-2xl md:text-3xl font-display font-semibold mb-2 group-hover:text-primary transition-colors duration-300">
-                    {collection.title}
-                  </h3>
-                  <p className="text-muted-foreground font-body text-sm md:text-base mb-4 opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">
-                    {collection.description}
-                  </p>
-                  <div className="flex items-center gap-2 text-primary opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500 delay-100">
-                    <span className="text-sm font-body tracking-wider uppercase">Available In Store</span>
-                    <motion.span
-                      animate={{ x: [0, 5, 0] }}
-                      transition={{ duration: 1.5, repeat: Infinity }}
-                    >
-                      →
-                    </motion.span>
-                  </div>
-                </motion.div>
+              <div className="absolute inset-0 flex flex-col justify-end p-6">
+                <h3 className="text-lg md:text-xl font-display font-semibold mb-2 group-hover:text-primary transition-colors duration-300">
+                  {product.title}
+                </h3>
+                <p className="text-primary text-sm font-body tracking-wider uppercase opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">
+                  Available In Store
+                </p>
               </div>
 
               {/* Corner Accent */}
-              <div className="absolute top-0 right-0 w-20 h-20 overflow-hidden">
-                <div className="absolute top-4 right-4 w-[1px] h-8 bg-primary/30 group-hover:bg-primary transition-colors duration-500" />
-                <div className="absolute top-4 right-4 w-8 h-[1px] bg-primary/30 group-hover:bg-primary transition-colors duration-500" />
+              <div className="absolute top-0 right-0 w-16 h-16 overflow-hidden">
+                <div className="absolute top-3 right-3 w-[1px] h-6 bg-primary/30 group-hover:bg-primary transition-colors duration-500" />
+                <div className="absolute top-3 right-3 w-6 h-[1px] bg-primary/30 group-hover:bg-primary transition-colors duration-500" />
               </div>
             </motion.div>
           ))}

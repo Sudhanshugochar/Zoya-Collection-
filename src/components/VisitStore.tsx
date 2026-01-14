@@ -1,6 +1,6 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { MapPin, Clock, Phone, Navigation, MessageCircle } from 'lucide-react';
+import { MapPin, Clock, Phone, Navigation, MessageCircle, Mail } from 'lucide-react';
 
 const VisitStore = () => {
   const ref = useRef(null);
@@ -44,9 +44,9 @@ const VisitStore = () => {
               <div>
                 <h3 className="text-lg font-display font-semibold mb-2">Store Address</h3>
                 <p className="text-muted-foreground font-body leading-relaxed">
-                  42 Fashion Avenue, Designer District<br />
-                  Luxury Mall, Ground Floor<br />
-                  Mumbai - 400001, India
+                  Hiwase Complex, First Floor<br />
+                  Main Road Buttibori<br />
+                  Nagpur - 441108, India
                 </p>
               </div>
             </div>
@@ -59,8 +59,7 @@ const VisitStore = () => {
               <div>
                 <h3 className="text-lg font-display font-semibold mb-2">Store Timings</h3>
                 <p className="text-muted-foreground font-body">
-                  Monday - Saturday: 10:00 AM - 9:00 PM<br />
-                  Sunday: 11:00 AM - 7:00 PM
+                  Open Daily: 10:00 AM - 10:00 PM
                 </p>
               </div>
             </div>
@@ -73,8 +72,20 @@ const VisitStore = () => {
               <div>
                 <h3 className="text-lg font-display font-semibold mb-2">Contact Us</h3>
                 <p className="text-muted-foreground font-body">
-                  +91 98765 43210<br />
-                  hello@zoyacollection.com
+                  +91 82619 18306
+                </p>
+              </div>
+            </div>
+
+            {/* Email */}
+            <div className="flex gap-6">
+              <div className="w-14 h-14 border border-primary/30 flex items-center justify-center flex-shrink-0">
+                <Mail className="w-6 h-6 text-primary" strokeWidth={1.5} />
+              </div>
+              <div>
+                <h3 className="text-lg font-display font-semibold mb-2">Email</h3>
+                <p className="text-muted-foreground font-body">
+                  zuberkhan8261@gmail.com
                 </p>
               </div>
             </div>
@@ -82,7 +93,7 @@ const VisitStore = () => {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 pt-6">
               <motion.a
-                href="https://maps.google.com"
+                href="https://maps.app.goo.gl/6PNocjfqUtSQyF8y8"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-primary-foreground font-body text-sm tracking-wider uppercase transition-all hover:shadow-lg hover:shadow-primary/20"
@@ -93,7 +104,7 @@ const VisitStore = () => {
                 Get Directions
               </motion.a>
               <motion.a
-                href="tel:+919876543210"
+                href="tel:+918261918306"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 border border-foreground/30 text-foreground font-body text-sm tracking-wider uppercase transition-all hover:border-primary hover:text-primary"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
@@ -102,7 +113,7 @@ const VisitStore = () => {
                 Call Now
               </motion.a>
               <motion.a
-                href="https://wa.me/919876543210"
+                href="https://wa.me/918261918306"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 border border-foreground/30 text-foreground font-body text-sm tracking-wider uppercase transition-all hover:border-primary hover:text-primary"
@@ -124,7 +135,7 @@ const VisitStore = () => {
           >
             <div className="absolute inset-0 border border-border overflow-hidden">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.8324766158147!2d72.82651531490237!3d18.930091987173445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7d1e8572b4f8b%3A0x4c0a3f8b4e8b4c0a!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.4968365858647!2d79.14651941493466!3d21.01467078601121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4bf987e1f0001%3A0x3c0a0d9c4e3e8f1e!2sButibori%2C%20Maharashtra%20441108!5e0!3m2!1sen!2sin!4v1705276800000!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 style={{ border: 0, filter: 'grayscale(1) contrast(1.2) opacity(0.8)' }}
