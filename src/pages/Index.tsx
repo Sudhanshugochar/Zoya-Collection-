@@ -7,7 +7,6 @@ import SignatureCollections from '@/components/SignatureCollections';
 import AboutSection from '@/components/AboutSection';
 import WhyChooseUs from '@/components/WhyChooseUs';
 import VideoShowcase from '@/components/VideoShowcase';
-import Lookbook from '@/components/Lookbook';
 import Testimonials from '@/components/Testimonials';
 import VisitStore from '@/components/VisitStore';
 import Newsletter from '@/components/Newsletter';
@@ -28,7 +27,6 @@ const Index = () => {
         <AboutSection />
         <WhyChooseUs />
         <VideoShowcase />
-        <Lookbook />
         <Testimonials />
         <VisitStore />
         <Newsletter />
