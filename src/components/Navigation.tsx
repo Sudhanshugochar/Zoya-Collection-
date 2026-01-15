@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import zoyaLogo from '@/assets/zoya-logo.jpg';
 
 const navLinks = [
   { name: 'Collections', href: '#collections' },
   { name: 'About', href: '#about' },
-  { name: 'Lookbook', href: '#lookbook' },
   { name: 'Visit Store', href: '#visit' },
 ];
 
@@ -31,15 +31,48 @@ const Navigation = () => {
       animate={{ y: 0 }}
       transition={{ delay: 4.5, duration: 0.6, ease: 'easeOut' }}
     >
-      <div className="container mx-auto px-6 py-4">
+      <div className="container mx-auto px-6 py-3">
         <div className="flex items-center justify-between">
-          {/* Logo */}
+          {/* Animated Logo */}
           <motion.a
             href="#"
-            className="text-2xl font-display font-semibold text-gradient-gold tracking-widest"
-            whileHover={{ scale: 1.02 }}
+            className="relative"
+            whileHover={{ scale: 1.05 }}
+            transition={{ type: 'spring', stiffness: 300 }}
           >
-            ZOYA
+            <motion.div
+              className="relative overflow-hidden"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 4.6, duration: 0.8, ease: 'easeOut' }}
+            >
+              <motion.img
+                src={zoyaLogo}
+                alt="Zoya Collection"
+                className="h-14 md:h-16 w-auto"
+                animate={{
+                  filter: ['brightness(1)', 'brightness(1.2)', 'brightness(1)'],
+                }}
+                transition={{
+                  duration: 3,
+                  repeat: Infinity,
+                  ease: 'easeInOut',
+                }}
+              />
+              {/* Shimmer effect */}
+              <motion.div
+                className="absolute inset-0 bg-gradient-to-r from-transparent via-primary/20 to-transparent"
+                animate={{
+                  x: ['-100%', '100%'],
+                }}
+                transition={{
+                  duration: 2.5,
+                  repeat: Infinity,
+                  repeatDelay: 3,
+                  ease: 'easeInOut',
+                }}
+              />
+            </motion.div>
           </motion.a>
 
           {/* Desktop Navigation */}
