@@ -7,7 +7,7 @@ const footerLinks = {
 };
 
 const socialLinks = [
-  { icon: Instagram, href: '#', label: 'Instagram' },
+  { icon: Instagram, href: 'https://www.instagram.com/zoyacollection11?igsh=M2QxaTFseWRycTRy', label: 'Instagram' },
   { icon: Facebook, href: '#', label: 'Facebook' },
   { icon: Twitter, href: '#', label: 'Twitter' },
 ];
@@ -108,6 +108,22 @@ const Footer = () => {
             <a href="#" className="hover:text-primary transition-colors">Terms of Service</a>
           </div>
         </div>
+
+        {/* AEON Labs Credit */}
+        <motion.div 
+          className="mt-8 pt-6 border-t border-border/50 text-center"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.5 }}
+        >
+          <p className="text-sm font-body text-muted-foreground">
+            Made with ❤️ by{' '}
+            <span className="text-gradient-gold font-semibold tracking-wide">AEON Labs</span>
+          </p>
+          <p className="text-xs text-muted-foreground/70 mt-1 italic">
+            Create Website for Future
+          </p>
+        </motion.div>
       </div>
     </footer>
   );
