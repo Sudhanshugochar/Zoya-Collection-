@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import heroImage1 from '@/assets/hero-1.jpg';
 import heroImage2 from '@/assets/hero-2.jpg';
 import heroImage3 from '@/assets/hero-3.jpg';
 import heroImage4 from '@/assets/hero-4.jpg';
@@ -9,11 +8,6 @@ import heroImage5 from '@/assets/hero-5.jpg';
 import heroImage6 from '@/assets/hero-6.jpg';
 
 const slides = [
-  {
-    image: heroImage1,
-    headline: 'Where Elegance Meets Craftsmanship',
-    subheadline: 'Discover timeless fashion that speaks your style',
-  },
   {
     image: heroImage2,
     headline: 'Ivory & Gold Collection',
