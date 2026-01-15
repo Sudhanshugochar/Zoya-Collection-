@@ -1,6 +1,6 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { MapPin, Clock, Phone, Navigation, MessageCircle, Mail } from 'lucide-react';
+import { MapPin, Clock, Phone, Navigation, MessageCircle, Mail, Users, Instagram } from 'lucide-react';
 
 const VisitStore = () => {
   const ref = useRef(null);
@@ -91,9 +91,9 @@ const VisitStore = () => {
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 pt-6">
+            <div className="flex flex-wrap gap-4 pt-6">
               <motion.a
-                href="https://maps.app.goo.gl/6PNocjfqUtSQyF8y8"
+                href="https://maps.app.goo.gl/Mddc6sE5s1bvEzNg8"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-primary-foreground font-body text-sm tracking-wider uppercase transition-all hover:shadow-lg hover:shadow-primary/20"
@@ -113,15 +113,37 @@ const VisitStore = () => {
                 Call Now
               </motion.a>
               <motion.a
-                href="https://wa.me/918261918306"
+                href="https://wa.me/918261918306?text=Hello%20Zoya%20Collection!"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 border border-foreground/30 text-foreground font-body text-sm tracking-wider uppercase transition-all hover:border-primary hover:text-primary"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 border border-foreground/30 text-foreground font-body text-sm tracking-wider uppercase transition-all hover:border-green-500 hover:text-green-500"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
                 <MessageCircle size={18} />
                 WhatsApp
+              </motion.a>
+              <motion.a
+                href="https://chat.whatsapp.com/Jtd1PTxcBTjIticuVUvRCi"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 border border-foreground/30 text-foreground font-body text-sm tracking-wider uppercase transition-all hover:border-green-500 hover:text-green-500"
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+              >
+                <Users size={18} />
+                Join Group
+              </motion.a>
+              <motion.a
+                href="https://www.instagram.com/zoyacollection11?igsh=M2QxaTFseWRycTRy"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 border border-foreground/30 text-foreground font-body text-sm tracking-wider uppercase transition-all hover:border-pink-500 hover:text-pink-500"
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+              >
+                <Instagram size={18} />
+                Instagram
               </motion.a>
             </div>
           </motion.div>
