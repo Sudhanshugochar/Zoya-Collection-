@@ -4,6 +4,7 @@ import CinematicIntro from '@/components/CinematicIntro';
 import Navigation from '@/components/Navigation';
 import Hero from '@/components/Hero';
 import SignatureCollections from '@/components/SignatureCollections';
+import WomenElegance from '@/components/WomenElegance';
 import AboutSection from '@/components/AboutSection';
 import WhyChooseUs from '@/components/WhyChooseUs';
 import VideoShowcase from '@/components/VideoShowcase';
@@ -24,6 +25,7 @@ const Index = () => {
         <Navigation />
         <Hero />
         <SignatureCollections />
+        <WomenElegance />
         <AboutSection />
         <WhyChooseUs />
         <VideoShowcase />
