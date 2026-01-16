@@ -1,13 +1,32 @@
+# Robots.txt for Zoya Collection Boutique
+# Allow search engines to index and crawl the site
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.json
+Crawl-delay: 0
+
+# Specific search engine rules
 User-agent: Googlebot
 Allow: /
+Crawl-delay: 0
 
 User-agent: Bingbot
 Allow: /
+Crawl-delay: 0
 
-User-agent: Twitterbot
+User-agent: Slurp
 Allow: /
+Crawl-delay: 0
 
-User-agent: facebookexternalhit
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 0
+
+# Sitemap location
+Sitemap: https://zoyacollection.com/sitemap.xml
 Allow: /
 
 User-agent: *
