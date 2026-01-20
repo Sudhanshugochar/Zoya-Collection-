@@ -15,7 +15,7 @@ export const useSEO = ({
   keywords = 'luxury fashion, boutique, designer wear, fashion Nagpur',
   ogImage = 'https://zoyacollection.com/og-image.jpg',
   ogType = 'website',
-  canonicalUrl = 'https://zoyacollection.com'
+  canonicalUrl = 'https://zoya-collection-z7p4.vercel.app/'
 }: SEOProps) => {
   useEffect(() => {
     // Update title
