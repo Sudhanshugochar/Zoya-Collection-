@@ -21,6 +21,11 @@ User-agent: Slurp
 Allow: /
 Crawl-delay: 0
 
+# Sitemap
+Sitemap: https://zoya-collection-q4ui.vercel.app/sitemap.xml
+Allow: /
+Crawl-delay: 0
+
 User-agent: DuckDuckBot
 Allow: /
 Crawl-delay: 0

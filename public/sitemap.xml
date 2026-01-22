@@ -5,45 +5,45 @@
   
   <!-- Homepage -->
   <url>
-    <loc>https://zoyacollection.com</loc>
-    <lastmod>2026-01-16</lastmod>
+    <loc>https://zoya-collection-q4ui.vercel.app/</loc>
+    <lastmod>2026-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
   <!-- Collection Pages -->
   <url>
-    <loc>https://zoyacollection.com/collections/women</loc>
-    <lastmod>2026-01-16</lastmod>
+    <loc>https://zoya-collection-q4ui.vercel.app/collections/women</loc>
+    <lastmod>2026-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <url>
-    <loc>https://zoyacollection.com/collections/men</loc>
-    <lastmod>2026-01-16</lastmod>
+    <loc>https://zoya-collection-q4ui.vercel.app/collections/men</loc>
+    <lastmod>2026-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <url>
-    <loc>https://zoyacollection.com/collections/festive</loc>
-    <lastmod>2026-01-16</lastmod>
+    <loc>https://zoya-collection-q4ui.vercel.app/collections/festive</loc>
+    <lastmod>2026-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <!-- About & Information Pages -->
   <url>
-    <loc>https://zoyacollection.com/about</loc>
-    <lastmod>2026-01-16</lastmod>
+    <loc>https://zoya-collection-q4ui.vercel.app/about</loc>
+    <lastmod>2026-01-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://zoyacollection.com/contact</loc>
-    <lastmod>2026-01-16</lastmod>
+    <loc>https://zoya-collection-q4ui.vercel.app/contact</loc>
+    <lastmod>2026-01-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
